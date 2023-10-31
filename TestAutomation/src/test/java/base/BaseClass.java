@@ -35,7 +35,7 @@ public class BaseClass {
 
 		if (driver == null) {
 			FileReader fr = new FileReader(
-					"C:\\Users\\grdop\\git\\SeleniumAutoTest\\TestAutomation\\src\\test\\resources\\configfiles\\config.properties");
+					System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 			prop.load(fr);
 		}
 
